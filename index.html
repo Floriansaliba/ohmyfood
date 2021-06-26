@@ -4,113 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="style.css">
     <title>ohmyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    
 </head>
 <body>
 <header>
-    <img src="images/logo/ohmyfood.png" alt="Logo ohmyfood">
+    <img class="logoohmyfood" src="images/logo/ohmyfood.png" alt="Logo ohmyfood">
 </header>
 <section id="decouvrir">
     <div id="explorer">
         <div id="paris">
-            <div id="svglocalisation"></div>
-            <p id="texte1"></p>
+            <div id="svglocalisation"><i class="fas fa-map-marker-alt"></i></div>
+            <p class="texte1"> Paris, Belleville</p>
         </div>
         <div id="reservez">
-            <h1 class="titre1"></h1>
-            <p class="texte2"></p>
-            <button class="bouton1">Explorer nos restaurants</button>
+            <h1 class="titre1--centre">Réservez le menu qui vous convient</h1>
+            <p class="texte2">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <div class="bouton">
+                <a href="#" class="bouton__lien">Explorer nos restaurants</a>
+            </div>
         </div>
     </div>
     <div class="fonctionnement">
-        <h1 class="titre1"></h1>
+        <h1 class="titre1--noncentre">Fonctionnement</h1>
         <div class="fonctionnement__etiquette">
-            <div class="fonctionnement__numero"></div>
-            <div class="fonctionnement__svg"></div>
-            <p class="fonctionnement__texte"></p>
+            <div class="fonctionnement__numero"><p class="fonctionnement__numero--p">1</p></div>
+            <div class="fonctionnement__svg"><i class="fas fa-mobile-alt"></i></div>
+            <p class="fonctionnement__texte">Choisissez un restaurant</p>
         </div>
         <div class="fonctionnement__etiquette">
-            <div class="fonctionnement__numero"></div>
-            <div class="fonctionnement__svg"></div>
-            <p class="fonctionnement__texte"></p>
+            <div class="fonctionnement__numero"><p class="fonctionnement__numero--p">2</p></div>
+            <div class="fonctionnement__svg"><i class="fas fa-list"></i></div>
+            <p class="fonctionnement__texte">Composez votre menu</p>
         </div>
         <div class="fonctionnement__etiquette">
-            <div class="fonctionnement__numero"></div>
-            <div class="fonctionnement__svg"></div>
-            <p class="fonctionnement__texte"></p>
+            <div class="fonctionnement__numero"><p class="fonctionnement__numero--p">3</p></div>
+            <div class="fonctionnement__svg"><i class="fas fa-store"></i></div>
+            <p class="fonctionnement__texte">Dégustez au restaurant</p>
         </div>
     </div>
 </section>
 <section id="restaurants">
-    <h1 class="titre1"></h1>
+    <h1 class="titre1--noncentre">Restaurants</h1>
     <div class="restaurant">
-        <div class="restaurant__image">
-            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant La palette du goût">
-            <div class="retaurant__nouveau">
-                <p class="texte3"></p>
+        <a class="restaurant__lien" href="la_palette_du_gout.html">
+            <div class="restaurant__image">
+                <img class="image1" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant la palette du goût">
+                <div class="restaurant__nouveau">
+                    <p class="texte3">Nouveau</p>
+                </div>
             </div>
-        </div>
-        <div class="restaurant__description">
-            <div class="restaurant__partietexte">
-                <h2 class="restaurant__titre"></h2>
-                <p class="restaurant__texte"></p>
+            <div class="restaurant__description">
+                <div class="restaurant__partietexte">
+                    <h2 class="restaurant__titre">La palette du goût</h2>
+                    <p class="restaurant__texte">Ménilmontant</p>
+                </div>
+                <div class="restaurant__coeur"><span><i class="fas fa-heart"></i></span></div>
             </div>
-            <div class="restaurant__coeur"></div>
-        </div>
+        </a>
     </div>
     <div class="restaurant">
-        <div class="restaurant__image">
-            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant La palette du goût">
-            <div class="retaurant__nouveau">
-                <p class="texte3"></p>
+        <a class="restaurant__lien" href="la_note_enchantee.html">
+            <div class="restaurant__image">
+                <img class="image2" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant la palette du goût">
+                <div class="restaurant__nouveau">
+                    <p class="texte3">Nouveau</p>
+                </div>
             </div>
-        </div>
-        <div class="restaurant__description">
-            <div class="restaurant__partietexte">
-                <h2 class="restaurant__titre"></h2>
-                <p class="restaurant__texte"></p>
+            <div class="restaurant__description">
+                <div class="restaurant__partietexte">
+                    <h2 class="restaurant__titre">La note enchantée</h2>
+                    <p class="restaurant__texte">Charonne</p>
+                </div>
+                <div class="restaurant__coeur"><span><i class="fas fa-heart"></i></span></div>
             </div>
-            <div class="restaurant__coeur"></div>
-        </div>
+        </a>
     </div>
     <div class="restaurant">
-        <div class="restaurant__image">
-            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant La palette du goût">
-            <div class="retaurant__nouveau">
-                <p class="texte3"></p>
+        <a class="restaurant__lien" href="a_la_francaise.html">
+            <div class="restaurant__image">
+                <img class="image1" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant la palette du goût">
             </div>
-        </div>
-        <div class="restaurant__description">
-            <div class="restaurant__partietexte">
-                <h2 class="restaurant__titre"></h2>
-                <p class="restaurant__texte"></p>
+            <div class="restaurant__description">
+                <div class="restaurant__partietexte">
+                    <h2 class="restaurant__titre">À la française</h2>
+                    <p class="restaurant__texte">Cité Rouge</p>
+                </div>
+                <div class="restaurant__coeur"><span><i class="fas fa-heart"></i></span></div>
             </div>
-            <div class="restaurant__coeur"></div>
-        </div>
+        </a>
     </div>
     <div class="restaurant">
-        <div class="restaurant__image">
-            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant La palette du goût">
-            <div class="retaurant__nouveau">
-                <p class="texte3"></p>
+        <a class="restaurant__lien" href="le_delice_des_sens.html">
+            <div class="restaurant__image">
+                <img class="image1" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant la palette du goût">
             </div>
-        </div>
-        <div class="restaurant__description">
-            <div class="restaurant__partietexte">
-                <h2 class="restaurant__titre"></h2>
-                <p class="restaurant__texte"></p>
+            <div class="restaurant__description">
+                <div class="restaurant__partietexte">
+                    <h2 class="restaurant__titre">Le délice des sens</h2>
+                    <p class="restaurant__texte">Folie-Méricourt</p>
+                </div>
+                <div class="restaurant__coeur"><span><i class="far fa-heart"></i></span></div>
             </div>
-            <div class="restaurant__coeur"></div>
-        </div>
+        </a>
     </div>
 </section>
 <footer>
-    <img class="footer__logo" src="images/logo/ohmyfood.png" alt="logo bas de page">
     <div class="footer__texte">
-        <ul>
-            <li>Proposer un restaurant</li>
-            <li>Devenir partenaire</li>
+        <h1 class="titreohmyfood">ohmyfood</h1>
+        <ul class="liste">
+            <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
+            <li><i class="fas fa-hands-helping"></i> Devenir partenaire</li>
             <li>Mentions légales</li>
             <li>Contact</li>
         </ul>
