@@ -31,6 +31,10 @@ $couleurfond_1 : #F2F2F2;
     box-shadow: 0px 5px 10px 1px darken($couleurfond_1, 20%);
 }
 
+@mixin dark_shadow{
+    box-shadow: 0px 5px 10px 5px darken($couleurfond_1, 25%);
+}
+
 
 /*       polices        */
 
@@ -122,6 +126,12 @@ header{
 }
 
 .bouton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 151.5px;
     background: linear-gradient(to bottom right, $couleursecondaire,$couleurprimaire);
     padding: 15px 15px 15px 15px;
     border-radius: 50px;
@@ -130,6 +140,10 @@ header{
         color: white;
         text-decoration: none;
         font-size: 14px;
+    }
+    &:hover{
+        background: lighten($couleursecondaire, 5%);
+        @include dark_shadow();
     }
 }
 
@@ -249,6 +263,8 @@ header{
             flex-direction: row;
             justify-content:space-between;
             align-items: center;
+            white-space: nowrap;
+            overflow: hidden;
             background-color: white;
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
@@ -257,6 +273,7 @@ header{
             padding-left: 10px;
         }
         &__titre{
+            text-overflow: ellipsis;
             color: black;
             display: inline-block;
             width: 240px;
@@ -265,16 +282,33 @@ header{
             margin-bottom: 5px;
         }
         &__texte{
+            text-overflow: ellipsis;
             color: black;
             margin-top: 0px;
         }
         &__coeur{
-            background: linear-gradient(to bottom right, $couleursecondaire,$couleurprimaire);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            font-size: 25px;
             margin-right: 30px;
+            &--coeurplein{
+                display: none;
+                background: linear-gradient(to bottom right, $couleursecondaire,$couleurprimaire);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                font-size: 25px;
+                z-index: 2;
+                
+            }
+            &--coeurvide{
+                font-size: 25px;
+                color: black;
+                z-index: 3;
+                &:active{
+                    display: none;
+                }
+                &:active + .restaurant__coeur--coeurplein{
+                    display: block;
+                }
+            }
         }
 }
 
@@ -332,4 +366,111 @@ footer{
     padding-left: 0px;
     line-height: 200%;
 }
+
+    //             PAGE LA PALETTE DU GOUT                 //
+
+    .fleche_gauche{
+        position: absolute;
+        top:13px;
+        left:13px;
+        font-size: 20px;
+    }
+
+    #palettedugout{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: $couleurfond_1;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        position: relative;
+        top: -50px;
+            &__titre{
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                &__titre1{
+                    font-family: $policetitre;
+                    font-size: 30px;
+                }
+            }
+            &__titre2{
+                font-size: 20px;
+                font-weight:lighter;
+            }
+            &__span{
+                font-size: 20px;
+                border-bottom: solid;
+                border-bottom-color: $couleurtertiaire;
+                border-bottom-width: 4px;
+            }
+            &__section{
+                width: 90%;
+            }
+            &__plat{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                overflow: hidden;
+                width: 337.5px;
+                margin: auto;
+                background-color: white;
+                border-radius: 20px;
+                height: 80px;
+                margin-bottom: 15px;
+                @include shadow();
+                 &:hover > .menu__validation{
+                    width: 70px;
+                }
+                &:hover > .menu__validation > span{
+                    display: block;
+                    transform : rotate(0deg);
+                }
+            }
+            &__description{
+                padding-left: 10px;
+            }
+            &__titre3{
+                font-size: 20px;
+                margin-bottom: 0px;
+            }
+            &__detail{
+                margin-top: 5px;
+            }
+            &__prix{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 50px;
+                text-align: center;
+                font-weight: bold;
+            }
+            &__validation{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: $couleurtertiaire;
+                color: white;
+                font-size: 25px;
+                width:0px;
+                border-bottom-right-radius: 20px;
+                border-top-right-radius: 20px;
+                transition: width 400ms;
+                & > span {
+                    transform : rotate(180deg);
+                    transition : transform 400ms;
+                }
+            }
+
+    }
+
 
