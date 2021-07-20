@@ -1,0 +1,20 @@
+//         PAGE LA NOTE ENCHANTEE                            //
+
+
+#lanoteenchantee{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+
+.contenant_image{
+    height: 275px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image_ajustee{
+    width: 100%;
+    object-fit: cover;
+    object-position: 0px  -100px;
+}

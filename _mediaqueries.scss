@@ -1,0 +1,106 @@
+@media (min-width: 1024px){
+    //          PAGE PRINCIPALE          //
+
+    .logoohmyfood {
+        width: 300px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .titre1--centre{
+        width: 100%;
+    }
+
+    .texte2{
+        width: 100%;
+    }
+
+    #fonctionnement__global{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .fonctionnement__etiquette {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .fonctionnement__numero{
+        top:-12.5px;
+        left: 160px;
+    }
+
+    #restaurants__global{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .restaurant {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+
+    .titre1--noncentre{
+        text-align: center;
+    }
+
+
+    //            La note enchantée                  //
+
+    .menu{
+        top: 0px;
+    }
+
+    .menu__disposition{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menu__plat{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .menu__titre{
+        justify-content: center;
+    }
+
+    .menu__titre__titre1{
+        margin-right: 30px;
+    }
+
+    .menu__titre2{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .bouton__commander{
+        margin-bottom: 50px;
+    }
+
+    //                   AJUSTEMENT DES IMAGES DES PAGES RESTAURANTS               //
+
+    .image_ajustee{
+        object-position: 0px -800px;
+    }
+
+    .image_ajustee2{
+        object-position: 0px -450px;
+    }
+
+    .image_ajustee3{
+        object-position: 0px -450px;
+    }
+
+    .image_ajustee4{
+        object-position: 0px -500px;
+    }
+
+    }

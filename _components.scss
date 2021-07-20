@@ -1,0 +1,36 @@
+    //               CREATION DU LOADING SPINNER             //
+
+    .cache{
+        position: absolute;
+        z-index: -10;
+        width: 100vw;
+        height: 100vh;
+        background-color: transparent;
+        animation: disparition_loader 2.5s forwards;
+    }
+
+    .chargement{
+        border: 10px solid $couleurprimaire;
+        border-top : 10px solid $couleursecondaire;
+        border-bottom: 10px solid $couleursecondaire;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        animation: spin 1s linear infinite;
+
+        // placement du spinner // 
+        position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right: 0;
+        margin: auto;
+        z-index: 20;
+    }
+
+    .main{
+        z-index: 10;
+        display: block;
+        position: relative;
+        animation: apparition_main 3s forwards;
+    }

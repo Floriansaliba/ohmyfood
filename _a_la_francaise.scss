@@ -1,0 +1,25 @@
+//         Ajustement de l'image A LA FRANCAISE             //
+
+.contenant_image3{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image_ajustee3{
+    width: 100%;
+    object-fit: cover;
+    object-position: 0px 0px;
+}
+
+
+
+
+
+//        PAGE A LA FRANCAISE                               //
+
+#alafrancaise{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}

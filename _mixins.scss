@@ -1,0 +1,27 @@
+/*        MIXINS         */
+@mixin arriereplan_clair{
+    background-color: $couleurfond_1;
+}
+
+@mixin arriereplan_fonce{
+    background-color: darken($couleurfond_1, 5%);
+}
+
+@mixin titre1{
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+
+@mixin textegris {
+    color: darken($couleurfond_1, 50%);
+    font-size: 15px;
+}
+
+@mixin shadow{
+    box-shadow: 0px 5px 10px 1px darken($couleurfond_1, 20%);
+}
+
+@mixin dark_shadow{
+    box-shadow: 0px 5px 10px 5px darken($couleurfond_1, 25%);
+}

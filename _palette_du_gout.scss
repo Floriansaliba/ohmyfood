@@ -1,0 +1,152 @@
+    //             PAGE LA PALETTE DU GOUT                 //
+
+    .fleche_gauche{
+        position: absolute;
+        top:13px;
+        left:13px;
+        font-size: 20px;
+    }
+
+    #palettedugout{
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: $couleurfond_1;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        position: relative;
+        top: -50px;
+            &__titre{
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                &__titre1{
+                    font-family: $policetitre;
+                    font-size: 30px;
+                    margin-bottom: 0px;
+                }
+            }
+            &__titre2{
+                font-size: 20px;
+                font-weight:lighter;
+                max-width: 337.5px;
+                margin: 50px auto 25px auto;
+            }
+            &__span{
+                font-size: 20px;
+                border-bottom: solid;
+                border-bottom-color: $couleurtertiaire;
+                border-bottom-width: 4px;
+                padding-bottom: 5px;
+            }
+            &__section{
+                width: 90%;
+            }
+            &__plat{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                overflow: hidden;
+                width: 337.5px;
+                margin: auto;
+                background-color: white;
+                border-radius: 20px;
+                height: 80px;
+                margin-bottom: 15px;
+                @include shadow();
+                 &:hover > .menu__validation{
+                    width: 70px;
+                }
+                &:hover > .menu__validation > span{
+                    display: block;
+                    transform : rotate(0deg);
+                }
+            }
+            &__description{
+                width: 273.453px;
+                height: 80px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                padding-left: 10px;
+            }
+            &__titre3{
+                font-size: 20px;
+                margin-bottom: 0px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &__detail{
+                margin-top: 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &__prix{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 50px;
+                text-align: center;
+                font-weight: bold;
+            }
+            &__validation{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: $couleurtertiaire;
+                color: white;
+                font-size: 25px;
+                width:0px;
+                border-bottom-right-radius: 20px;
+                border-top-right-radius: 20px;
+                transition: width 400ms;
+                & > span {
+                    transform : rotate(-360deg);
+                    transition : transform 400ms ease-in-out;
+                    transition-delay: 100ms;
+                }
+            }
+
+    }
+
+    .apparition1{
+        animation: apparition 1s;
+    }
+
+    .apparition2{
+        animation: apparition 2s;
+    }
+
+    .apparition3{
+        animation: apparition 3s;
+    }
+
+    .apparition4{
+        animation: apparition 4s;
+    }
+
+    //         Ajustement de l'image LA PALETTE DU GOUT             //
+
+.contenant_image2{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image_ajustee2{
+    width: 100%;
+    object-fit: cover;
+    object-position: 0px 0px;
+}

@@ -1,0 +1,22 @@
+//         Ajustement de l'image DELICE DES SENS            //
+
+.contenant_image4{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.image_ajustee4{
+    width: 100%;
+    object-fit: cover;
+    object-position: 0px 0px;
+}
+
+//        PAGE LE DELICE DES SENS                           //
+
+#ledelicedessens{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
