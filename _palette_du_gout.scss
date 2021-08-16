@@ -1,10 +1,15 @@
     //             PAGE LA PALETTE DU GOUT                 //
 
     .fleche_gauche{
+        text-decoration: none;
+        color: black;
         position: absolute;
         top:13px;
         left:13px;
         font-size: 20px;
+        &:visited{
+            color:black;
+        }
     }
 
     #palettedugout{

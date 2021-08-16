@@ -601,7 +601,6 @@ header {
   position: absolute;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 25px;
@@ -673,7 +672,6 @@ header {
   position: absolute;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 25px;
@@ -725,7 +723,6 @@ header {
   position: absolute;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 25px;
@@ -777,7 +774,6 @@ header {
   position: absolute;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 25px;
@@ -829,7 +825,6 @@ header {
   position: absolute;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 25px;
@@ -881,7 +876,6 @@ header {
   position: absolute;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 25px;
@@ -933,7 +927,6 @@ header {
   position: absolute;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 25px;
@@ -985,7 +978,6 @@ header {
   position: absolute;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 25px;
@@ -1123,10 +1115,16 @@ footer {
 }
 
 .fleche_gauche {
+  text-decoration: none;
+  color: black;
   position: absolute;
   top: 13px;
   left: 13px;
   font-size: 20px;
+}
+
+.fleche_gauche:visited {
+  color: black;
 }
 
 #palettedugout {
